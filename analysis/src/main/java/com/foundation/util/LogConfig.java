@@ -6,6 +6,7 @@ package com.foundation.util;
  */
 
 public class LogConfig {
+    private String mBaseTag="LogUtil";
     private boolean isDebug = true;
     private boolean isUpload = false;
     private boolean isCache = true;
@@ -58,5 +59,21 @@ public class LogConfig {
      * */
     public void setCache(boolean cache) {
         isCache = cache;
+    }
+
+    /**
+     *
+     * 获取基标签
+     * @return 基标签名称
+     * */
+    public String getmBaseTag() {
+        return mBaseTag;
+    }
+    /**
+     * 设置基标签
+     * @param baseTag 设置的基标签名称
+     * */
+    public void setmBaseTag(String baseTag) {
+        this.mBaseTag = baseTag;
     }
 }
